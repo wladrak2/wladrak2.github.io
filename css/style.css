@@ -1,0 +1,504 @@
+/*
+    Основа
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/art_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'FrizQuadrataTT';
+    src: url('../FrizQuadrataTT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/*
+    Верхняя панель
+*/
+
+header {
+    font-family: helvetica,arial,sans-serif;
+    width: 100%;
+    height: 5vh;
+    background-color: #181818;
+    border-bottom: 1px solid #181818;
+    box-shadow: 0px 0px 5px #181818;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+header ul li a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#home {
+    background: conic-gradient(#181818 10%,#aa0000 0%,#aa0000 60%, #181818 50%);
+    background-size: 210%;
+    background-position: 0% 0%;
+}
+#wiki {
+    background: conic-gradient(#181818 10%,#006d00 0%,#006d00 60%, #181818 50%);
+    background-size: 210%;
+    background-position: 0% 0%;
+}
+#news {
+    background: conic-gradient(#181818 10%,#a06800 0%,#a06800 60%, #181818 50%);
+    background-size: 210%;
+    background-position: 0% 0%;
+}
+#book {
+    background: conic-gradient(#181818 10%,#43007a 0%,#43007a 60%, #181818 50%);
+    background-size: 210%;
+    background-position: 0% 0%;
+}
+
+#home:hover {
+    animation: anim 1s ease forwards;
+}
+#wiki:hover {
+    animation: anim 1s ease forwards;
+}
+#news:hover {
+    animation: anim 1s ease forwards;
+}
+#book:hover {
+    animation: anim 1s ease forwards;
+}
+
+@keyframes anim{
+    0%{
+        background-position: 0% 0%;
+        color: rgb(173, 173, 173);
+        font-size: 20px;
+    }
+    100%{
+        background-position: 80% 80%;
+        color: #ffffff;
+        font-size: 25px;
+    }
+}
+
+/*
+    Панель по середине
+*/
+
+section {
+    width: calc(100% - 30vh);
+    height: auto; 
+    background-color: #c2ae98;
+    margin: 0px 15vh 0px;
+    border-radius: 5px;
+    padding-bottom: 100px;
+}
+
+.main-block {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 0px 20px 20px;
+}
+
+/*
+    Стиль текстов
+*/
+
+h1 {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: helvetica,arial,sans-serif;
+    color: #532b2b;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #836b50;
+}
+
+h3, h3 a {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    font-family: 'FrizQuadrataTT', sans-serif;
+    font-size: 60px;
+}
+
+h5 {
+    font-family:helvetica,arial,sans-serif;
+    font-size: 10px;
+    color: #252525;
+}
+
+p {
+    font-family: helvetica,arial,sans-serif;
+    line-height: 30px;
+}
+
+/*
+    Стиль терминов
+*/
+
+.termin {
+    text-decoration: none;
+    color: #9c1818;
+}
+
+.termin:hover {
+    color: #270606;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+    Блоки которые скрываются
+*/
+
+.icon-hider-1 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    left: 3px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+.icon-hider-2 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    left: 3px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+.icon-hider-3 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    left: 3px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+.icon-hider-4 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    left: 3px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+.icon-hider-5 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+    left: 3px;
+    top: 20px;
+    transform: rotate(225deg);
+}
+
+#i-hider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #532b2b;
+    border-left: 2px solid #532b2b;
+}
+
+.block-hider-1 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+.block-hider-2 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+.block-hider-3 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+.block-hider-4 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+.block-hider-5 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.content-block-hider {
+    display: block;
+}
+
+/*
+    Блоки с контентом
+*/
+
+#block-2 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#block-3 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#block-4 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#block-5 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#block-6 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+/*
+    Лого и опции
+*/
+
+.option {
+    display: flex;
+    width: calc(100% - 30vh);
+    height: 8vh;
+    margin: 15vh 15vh 0px;
+}
+
+.logo {
+    position: relative;
+    bottom: 95px;
+    color: #9c0000;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.function {
+    position: relative;
+    height: 20px;
+    display: flex;
+    color: white;
+    margin-left: 10vh;
+    top: 40%;
+}
+
+#f-1 {
+    position: absolute;
+    height: 20px;
+    width: auto;
+    margin-right: 5vh;
+    white-space: nowrap;
+}
+
+#f-2 {
+    position: absolute;
+    width: auto;
+    height: 20px;
+    left: 200px;
+    white-space: nowrap;
+}
+
+.f-text-1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.f-text-2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#f-1 .menu {
+    display: none;
+    width: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+#f-2 .menu {
+    display: none;
+    width: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.menu ul {
+    width: 100%;
+    height: auto;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px rgb(82, 82, 82);
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    background-color: #c2ae98;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #c2ae98;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: helvetica,arial,sans-serif;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.menu ul li:hover {
+    background-color: #867777;
+    transition: background-color 0.5s ease;
+}
+
+.menu ul li a:hover {
+    color: #9c0000;
+}
+
+.menu div.strelka {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #a52525;
+    left: 38%;
+    top: 25px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#podmenu-1 ul {
+    z-index: 2;
+    margin-left: 0%;
+}
+
+#podmenu-1 #rasa {
+    padding-right: 100px;
+}
+
+.strelka-podmenu {
+    position: absolute;
+    left: 80%;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    z-index: 1;
+    background-color: none;
+    transform: rotate(45deg);
+}
+
+#rasa:hover ~ .strelka-podmenu {
+    border-top: 1px solid #9c0000;
+    border-right: 1px solid #9c0000;
+}
+
+/*
+    Нижняя часть
+*/
+
+footer {
+    border: 1px solid #00000000;
+    margin-top: 15vh;
+    width: 100%;
+    height: 220px;
+    background-color: #000000;
+    box-shadow: 0px 0px 25px #000000;
+}
+
+.text-footer {
+    width: 90%;
+    height: 100px;
+    border-top: 3px solid #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    margin: 1% 5% 0%;
+}
+
+.privat-marker {
+    line-height: 5px;
+}
