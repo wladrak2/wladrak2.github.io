@@ -125,6 +125,10 @@ footer {
     list-style-type: "- ";
 }
 
+.main-text-block .list-block li {
+    margin-top: 5px;
+}
+
 .main-text-block .list-block dl dt{
     margin-top: 10px;
 }
