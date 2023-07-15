@@ -24,6 +24,7 @@
     border-radius: 10px;
     margin: 10px;
     overflow: hidden;
+    opacity: 1;
 }
 
 .mini-block-image img {
