@@ -201,7 +201,7 @@ h2 {
 }
 
 p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 b {
@@ -223,4 +223,8 @@ b {
 .time-view-block .view-history-block {
     width: 100%;
     height: auto;
+}
+
+i {
+    color:#0c808f;
 }
