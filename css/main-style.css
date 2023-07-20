@@ -152,6 +152,15 @@ a.termin:hover{
     text-decoration:underline;
 }
 
+a.termin-footer{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+a.termin-footer:hover{
+    text-decoration:underline;
+}
+
 .header-text a{
     color: rgb(255, 255, 255);
     text-decoration: none;
