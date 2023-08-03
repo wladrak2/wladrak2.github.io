@@ -8,7 +8,7 @@ const elements = (<div className="footer-block">
         <p>Сайт был создан для развлекательных целях. Вся вселенна лишь воображение авторов и не как не связанные с реальным миром. Присутствует множество отсылок на другие проекты, аниме, фильмы и игры.</p>
         <p>Автор - wladrak</p>
         <p>Можно связатся с нами: E-mail - wladrak711@gmail.com ; VK - <a className="termin-footer" href="https://vk.com/wladrak">wladrak</a></p>
-        <p>© RP-LIB / 2023 / Version 0.1.7 (Alpha) [Build 00808022350]</p>
+        <p>© RP-LIB / 2023 / Version 0.1.8 (Alpha) [Build 00908031747]</p>
     </div>
 </div>);
 
